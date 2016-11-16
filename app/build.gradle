@@ -8,7 +8,7 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        applicationId "zhiyuan.com.loan"
+        applicationId "zhiyuan.com.flowers"
         minSdkVersion 11
         targetSdkVersion 22
         versionCode 1
@@ -20,6 +20,21 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    // 友盟多渠道打包
+    productFlavors {
+        wandoujia {}  //豌豆荚
+        c360 {}    //360
+        vivo {}     //vivo
+        pphelper {}  //pp助手
+        tencent {}   //腾讯
+        baidu {}   //百度
+        xiaomi {}   //小米
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
     }
 }
 

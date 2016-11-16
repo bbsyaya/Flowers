@@ -188,7 +188,7 @@ public class MePageFragment extends Fragment {
                     else {
                         startActivity(new Intent(getActivity(),LoginActivity.class));
                     }
-
+                    break;
                 case R.id.ll_me_collect:
                     if (!currentPhone.equals("")){
                         startActivity(new Intent(getActivity(),CollectArticleActivity.class));

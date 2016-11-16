@@ -66,6 +66,7 @@ public class RegisterActivity extends BaseActivity {
         initView();
 
         initData();
+
     }
 
     private void initView() {
@@ -80,6 +81,7 @@ public class RegisterActivity extends BaseActivity {
 
 
     private void initData() {
+        mTimer = new Timer();
         EventHandler eh=new EventHandler(){
 
             @Override
@@ -129,19 +131,20 @@ public class RegisterActivity extends BaseActivity {
         };
         SMSSDK.registerEventHandler(eh); //注册短信回调
         //定时器
-        mTimerTask = new TimerTask() {
+        mTimerTask = new MyTimerTask();
+    }
 
-            @Override
-            public void run() {
-                Message message = myHandler.obtainMessage(MSG_UPDATE);
-                message.obj = timeUpdate;
-                myHandler.sendMessage(message);
-                if(timeUpdate==0){
-                    return;
-                }
-                timeUpdate--;
+    class MyTimerTask extends TimerTask{
+        @Override
+        public void run() {
+            Message message = myHandler.obtainMessage(MSG_UPDATE);
+            message.obj = timeUpdate;
+            myHandler.sendMessage(message);
+            if(timeUpdate==0){
+                return;
             }
-        };
+            timeUpdate--;
+        }
     }
 
     Handler myHandler = new Handler(){
@@ -182,8 +185,12 @@ public class RegisterActivity extends BaseActivity {
                 bu_register_getvercode.setText(60+"");
                 hideDialog();
                 Toast.makeText(RegisterActivity.this,"验证码发送成功", Toast.LENGTH_SHORT).show();
+                timeUpdate = 60;
 
-                mTimer = new Timer();
+                if (mTimerTask != null){
+                    mTimerTask.cancel();  //将原任务从队列中移除
+                }
+                mTimerTask = new MyTimerTask();
                 mTimer.schedule(mTimerTask, 1000, 1000);
             }
         }
@@ -307,6 +314,7 @@ public class RegisterActivity extends BaseActivity {
                             hideDialog();
 
                             int errorCode=e.getErrorCode();
+                            Log.i(TAG,"errorCode:"+errorCode);
                             if(errorCode== EMError.NETWORK_ERROR){
                                 Toast.makeText(RegisterActivity.this, "网络异常，请检查网络！", Toast.LENGTH_SHORT).show();
                             }else if(errorCode == EMError.USER_ALREADY_EXIST){
