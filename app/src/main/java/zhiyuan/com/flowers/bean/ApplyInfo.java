@@ -9,12 +9,20 @@ public class ApplyInfo extends BmobObject {
     private String applyId;
     private String name;
     private String qq;
+    private String weixin;
     private String certificate;
-    private String account;
-    private String password;
-    private String record;
-    private String grade;
+    private String province;
+    private String money;
     private String phone;
+    private String mouths;
+
+    public String getApplyId() {
+        return applyId;
+    }
+
+    public void setApplyId(String applyId) {
+        this.applyId = applyId;
+    }
 
     public String getName() {
         return name;
@@ -32,6 +40,14 @@ public class ApplyInfo extends BmobObject {
         this.qq = qq;
     }
 
+    public String getWeixin() {
+        return weixin;
+    }
+
+    public void setWeixin(String weixin) {
+        this.weixin = weixin;
+    }
+
     public String getCertificate() {
         return certificate;
     }
@@ -40,45 +56,20 @@ public class ApplyInfo extends BmobObject {
         this.certificate = certificate;
     }
 
-    public String getAccount() {
-        return account;
+    public String getProvince() {
+        return province;
     }
 
-    public void setAccount(String account) {
-        this.account = account;
+    public void setProvince(String province) {
+        this.province = province;
     }
 
-    public String getPassword() {
-        return password;
+    public String getMone() {
+        return money;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getRecord() {
-        return record;
-    }
-
-
-    public void setRecord(String record) {
-        this.record = record;
-    }
-
-    public String getGrade() {
-        return grade;
-    }
-
-    public void setGrade(String grade) {
-        this.grade = grade;
-    }
-
-    public String getApplyId() {
-        return applyId;
-    }
-
-    public void setApplyId(String applyId) {
-        this.applyId = applyId;
+    public void setMoney(String money) {
+        this.money = money;
     }
 
     public String getPhone() {
@@ -89,37 +80,23 @@ public class ApplyInfo extends BmobObject {
         this.phone = phone;
     }
 
-    public ApplyInfo(String applyId, String name, String qq, String certificate, String account, String password, String record, String grade) {
+    public String getMouths() {
+        return mouths;
+    }
+
+    public void setMouths(String mouths) {
+        this.mouths = mouths;
+    }
+
+    public ApplyInfo(String applyId, String name, String qq, String weixin, String certificate, String province, String money, String phone, String mouths) {
         this.applyId = applyId;
         this.name = name;
         this.qq = qq;
+        this.weixin = weixin;
         this.certificate = certificate;
-        this.account = account;
-        this.password = password;
-        this.record = record;
-        this.grade = grade;
-    }
-
-    public ApplyInfo(String name, String qq, String certificate, String account, String password, String record, String grade) {
-        this.name = name;
-        this.qq = qq;
-        this.certificate = certificate;
-        this.account = account;
-        this.password = password;
-        this.record = record;
-        this.grade = grade;
-    }
-
-    public ApplyInfo(String tableName, String applyId, String name, String qq, String certificate, String account, String password, String record, String grade, String phone) {
-        super(tableName);
-        this.applyId = applyId;
-        this.name = name;
-        this.qq = qq;
-        this.certificate = certificate;
-        this.account = account;
-        this.password = password;
-        this.record = record;
-        this.grade = grade;
+        this.province = province;
+        this.money = money;
         this.phone = phone;
+        this.mouths = mouths;
     }
 }

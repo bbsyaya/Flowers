@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="zhiyuan.com.loan.activity.ApplySuccessActivity">
+    tools:context="zhiyuan.com.flowers.activity.ApplySuccessActivity">
 
     <TextView
         android:id="@+id/text"
@@ -21,6 +21,10 @@
         android:text="知道啦"
         android:background="@drawable/bg_button"
         android:onClick="knowIt"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:gravity="center"
         android:layout_centerInParent="true"/>
 
 </RelativeLayout>

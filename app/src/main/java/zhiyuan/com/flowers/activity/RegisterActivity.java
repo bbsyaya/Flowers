@@ -257,6 +257,7 @@ public class RegisterActivity extends BaseActivity {
     //将数据插入到数据库
     private void insertToDB(final User user) {
         showDialog("正在注册....");
+
         user.save(this, new SaveListener() {
             @Override
             public void onSuccess() {

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="zhiyuan.com.loan.activity.CreditDetailActivity">
+    tools:context="zhiyuan.com.flowers.activity.CreditDetailActivity">
     <RelativeLayout
         android:id="@+id/rl_credit_top"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_centerInParent="true"
-            android:text="贷款详情"
+            android:text="北京贷款介绍"
             android:gravity="center"
             android:textColor="#000"
             android:textSize="20sp"/>
@@ -74,7 +74,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/daidaihong" />
+                    android:src="@drawable/beijidai" />
                 <TextView
                     android:id="@+id/tv_credit_platformname"
                     android:layout_toRightOf="@id/iv_credit_platformicon"
@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
-                    android:text="拍来贷"
+                    android:text="北京面签面取贷款"
                     android:textColor="#494949"
                     android:textSize="16sp"/>
                 <TextView
@@ -158,56 +158,7 @@
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 android:padding="10dp"
-                android:text="全程网络操作，快至一小时放款，无抵押，无担保。" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="10dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="专科/本科及以上学历:"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="20dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="额度范围：2000~3000"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="期限范围：5~7月"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <!--<View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#C4C4C4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_alignParentBottom="true"></View>-->
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="按月还款"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:textColor="#05BDA7"
-                android:textSize="15sp"/>
+                android:text="北京面签面取，快至当天放款，无抵押，无担保" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -239,11 +190,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1.持中国具名身份证的中国大陆公民"/>
+                        android:text="1、持中国居民身份证的中国大陆公民（新疆、西藏不做）"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2.在校大学生"/>
+                        android:text="2、非在校大学生"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -264,7 +215,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="所需材料"
+                        android:text="相关介绍"
                         android:textColor="#05BDA7"
                         android:gravity="center"/>
                 </LinearLayout>
@@ -277,7 +228,19 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="身份证正反面"/>
+                        android:text="年龄要求：20-55周岁"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="额度范围：10万-200万"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="期限范围：3年-5年"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="月利率：0.65%-1.5%"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -313,7 +276,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="58名校贷上填写贷款申请"
+                        android:text="宜人分期贷上填写贷款申请"
                         android:textColor="#8E8E8E"
                         android:textSize="20sp"
                         android:gravity="center"
@@ -359,7 +322,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="客服进行资料提交与审核"
+                        android:text="北京面签面取"
                         android:textColor="#8E8E8E"
                         android:textSize="20sp"
                         android:gravity="center"
