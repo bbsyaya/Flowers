@@ -129,7 +129,7 @@ public class MePageFragment extends Fragment {
         if (file.exists()){
             return;
         }
-        Bitmap logoBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.logo);
+        Bitmap logoBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.flowers_logo);
         ByteArrayOutputStream logoStream = new ByteArrayOutputStream();
         boolean res = logoBitmap.compress(Bitmap.CompressFormat.PNG, 100, logoStream);
         //将图像读取到logoStream中

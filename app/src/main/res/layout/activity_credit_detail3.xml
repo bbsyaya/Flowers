@@ -44,8 +44,7 @@
             android:layout_toLeftOf="@id/iv_credit_contant"
             android:layout_centerVertical="true"
             android:text="联系客服"
-            android:textColor="#FFFFFF"/>
-
+            android:textColor="#000000"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -74,7 +73,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/daidaihong" />
+                    android:src="@drawable/renrendailogo" />
                 <TextView
                     android:id="@+id/tv_credit_platformname"
                     android:layout_toRightOf="@id/iv_credit_platformicon"
@@ -82,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
-                    android:text="拍来贷"
+                    android:text="花儿朵朵"
                     android:textColor="#494949"
                     android:textSize="16sp"/>
                 <TextView
@@ -174,7 +173,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="专科/本科及以上学历:"/>
+                        android:text="专科:"/>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -183,11 +182,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="额度范围：2000~3000"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="期限范围：5~7月"/>
+                            android:text="额度：8000"/>
                     </LinearLayout>
                 </LinearLayout>
                 <!--<View
@@ -197,7 +192,68 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_alignParentBottom="true"></View>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="二本/三本:"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="额度：10000"/>
+                    </LinearLayout>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一本:"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="额度：15000"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="研究生/博士:"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="额度：60000"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
             <TextView
@@ -277,7 +333,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="身份证正反面"/>
+                        android:text="1.身份证正反面"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.学生证封面、注册章页、个人信息页或者其他含有学生信息的证件/图片"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.银行卡正面照"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -390,6 +454,7 @@
                 </LinearLayout>
 
             </LinearLayout>
+
 
         </LinearLayout>
 

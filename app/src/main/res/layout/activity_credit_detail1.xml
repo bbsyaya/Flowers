@@ -44,8 +44,7 @@
             android:layout_toLeftOf="@id/iv_credit_contant"
             android:layout_centerVertical="true"
             android:text="联系客服"
-            android:textColor="#FFFFFF"/>
-
+            android:textColor="#000000"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -74,7 +73,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/daidaihong" />
+                    android:background="#FFE4CD"
+                    android:src="@drawable/mingxiaodailogo" />
                 <TextView
                     android:id="@+id/tv_credit_platformname"
                     android:layout_toRightOf="@id/iv_credit_platformicon"
@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
-                    android:text="拍来贷"
+                    android:text="名校贷-学生包"
                     android:textColor="#494949"
                     android:textSize="16sp"/>
                 <TextView
@@ -174,7 +174,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="专科/本科及以上学历:"/>
+                        android:text="专科:"/>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -183,11 +183,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="额度范围：2000~3000"/>
+                            android:text="额度范围：2000~10000"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="期限范围：5~7月"/>
+                            android:text="期限范围：12~24月"/>
                     </LinearLayout>
                 </LinearLayout>
                 <!--<View
@@ -197,7 +197,30 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_alignParentBottom="true"></View>-->
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本科:"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="额度范围：2000~50000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="期限范围：12~36月"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
             <TextView
@@ -281,116 +304,115 @@
                 </LinearLayout>
             </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请流程"
+                android:background="#FD9942"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="申请流程"
-                    android:background="#FD9942"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="1"
+                    android:gravity="center"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
-                    android:padding="2dp"
-                    android:layout_marginLeft="5dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginLeft="5dp">
-                    <TextView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:text="1"
-                        android:gravity="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:background="@drawable/bg_process"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="58名校贷上填写贷款申请"
-                        android:textColor="#8E8E8E"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:layout_marginLeft="20dp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="5dp">
-                    <TextView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:text="2"
-                        android:gravity="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:background="@drawable/bg_process"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="客服通知您（或自己联系客服）"
-                        android:textColor="#8E8E8E"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:layout_marginLeft="20dp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginLeft="5dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:text="3"
-                        android:gravity="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:background="@drawable/bg_process"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="客服进行资料提交与审核"
-                        android:textColor="#8E8E8E"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:layout_marginLeft="20dp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginLeft="5dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:text="4"
-                        android:gravity="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp"
-                        android:background="@drawable/bg_process"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="审核通过，资金下发"
-                        android:textColor="#8E8E8E"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:layout_marginLeft="20dp"/>
-                </LinearLayout>
-
+                    android:background="@drawable/bg_process"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="58名校贷上填写贷款申请"
+                    android:textColor="#8E8E8E"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp">
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="2"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_process"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="客服通知您（或自己联系客服）"
+                    android:textColor="#8E8E8E"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="3"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_process"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="客服进行资料提交与审核"
+                    android:textColor="#8E8E8E"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="4"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_process"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="审核通过，资金下发"
+                    android:textColor="#8E8E8E"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
             </LinearLayout>
 
+        </LinearLayout>
         </LinearLayout>
 
     </ScrollView>

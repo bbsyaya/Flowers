@@ -110,7 +110,7 @@
                         android:id="@+id/tv_home_moneys"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="10万-200万"
+                        android:text="2000-50000"
                         android:layout_centerHorizontal="true"
                         android:textSize="20sp"
                         android:textColor="#FF0000"/>
@@ -140,7 +140,7 @@
                         android:id="@+id/tv_home_mouth"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="3年~5年"
+                        android:text="1-36个月"
                         android:textSize="15sp"
                         android:layout_alignParentRight="true"/>
 
@@ -182,7 +182,7 @@
                         android:id="@+id/tv_home_appname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="宜人分期贷"
+                        android:text="花儿朵朵"
                         android:layout_centerHorizontal="true"
                         android:textSize="20sp"
                         android:textColor="#FF0000"/>
@@ -251,10 +251,10 @@
                     android:background="@drawable/bg_circle"
                     android:layout_centerHorizontal="true"/>
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/logo"
-                    android:layout_marginTop="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/class_icon"
+                    android:layout_marginTop="5dp"
                     android:layout_centerHorizontal="true"/>
 
                 <TextView
@@ -266,7 +266,7 @@
                     android:textColor="#47B4F1"
                     android:layout_marginTop="2dp"
                     android:layout_centerHorizontal="true"
-                    android:text="贷款介绍"/>
+                    android:text="平台介绍"/>
                 <TextView
                     android:layout_below="@id/tv_item_class1"
                     android:layout_width="wrap_content"

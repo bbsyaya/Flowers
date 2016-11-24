@@ -19,7 +19,7 @@ import com.umeng.analytics.MobclickAgent;
 
 import zhiyuan.com.flowers.R;
 import zhiyuan.com.flowers.activity.CommitMaterialStep1Activity;
-import zhiyuan.com.flowers.activity.CreditDetailActivity;
+import zhiyuan.com.flowers.activity.CreditPlatListActivity;
 import zhiyuan.com.flowers.activity.HomeActivity;
 
 /**
@@ -160,7 +160,7 @@ public class HomePageFragment  extends Fragment {
                     calling();
                     break;
                 case R.id.rl_home_creditClass:
-                    getActivity().startActivity(new Intent(getActivity(), CreditDetailActivity.class));
+                    getActivity().startActivity(new Intent(getActivity(), CreditPlatListActivity.class));
                     break;
 
                 case R.id.rl_home_consult:

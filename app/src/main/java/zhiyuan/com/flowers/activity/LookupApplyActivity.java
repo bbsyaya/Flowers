@@ -23,7 +23,6 @@ public class LookupApplyActivity extends BaseActivity {
     private TextView tv_histery_record;
     private TextView tv_histery_grade;
     private String applyId;
-    private TextView tv_histery_phone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +47,6 @@ public class LookupApplyActivity extends BaseActivity {
             tv_histery_password = (TextView) findViewById(R.id.tv_histery_password);
             tv_histery_record = (TextView) findViewById(R.id.tv_histery_record);
             tv_histery_grade = (TextView) findViewById(R.id.tv_histery_grade);
-            tv_histery_phone = (TextView) findViewById(R.id.tv_histery_phone);
 
             loadData();
         }
@@ -65,11 +63,10 @@ public class LookupApplyActivity extends BaseActivity {
                     tv_histery_name.setText(applyInfo.getName());
                     tv_histery_qq.setText(applyInfo.getQq());
                     tv_histery_certif.setText(applyInfo.getCertificate());
-                    tv_histery_acount.setText(applyInfo.getWeixin());
-                    tv_histery_password.setText(applyInfo.getProvince());
-                    tv_histery_record.setText(applyInfo.getMone());
-                    tv_histery_grade.setText(applyInfo.getMouths());
-                    tv_histery_phone.setText(applyInfo.getPhone());
+                    tv_histery_acount.setText(applyInfo.getAccount());
+                    tv_histery_password.setText(applyInfo.getPassword());
+                    tv_histery_record.setText(applyInfo.getRecord());
+                    tv_histery_grade.setText(applyInfo.getGrade());
                 }
             }
 

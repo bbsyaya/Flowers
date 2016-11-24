@@ -56,9 +56,9 @@ public class PushMessageReceiver extends BroadcastReceiver {
         NotificationManager nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         Notification.Builder builder = new Notification.Builder(context);
 
-        builder.setSmallIcon(R.drawable.logo); //设置图标
-        builder.setTicker("58名校贷");
-        builder.setContentTitle("58名校贷"); //设置标题
+        builder.setSmallIcon(R.drawable.flowers_logo); //设置图标
+        builder.setTicker("花儿朵朵");
+        builder.setContentTitle("花儿朵朵"); //设置标题
         builder.setContentText(alert); //消息内容
         builder.setWhen(System.currentTimeMillis()); //发送时间
         builder.setDefaults(Notification.DEFAULT_ALL); //设置默认的提示音，振动方式，灯光

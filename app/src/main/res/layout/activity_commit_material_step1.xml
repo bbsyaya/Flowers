@@ -86,7 +86,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="申请金额（10万-200万）"
+                        android:text="申请金额（2000-50000）"
                         android:textColor="#05BDA7"
                         android:textSize="15sp"
                         android:gravity="center"/>
@@ -121,7 +121,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="时间（3-5年）"
+                        android:text="月数（1~36个月）"
                         android:textSize="15sp"
                         android:textColor="#05BDA7"
                         android:gravity="center"/>
@@ -208,158 +208,17 @@
                     />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="#FFFFFF"
-                android:layout_marginTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/application_condition_icon"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="qq号"
-                        android:textSize="15sp"
-                        android:textColor="#05BDA7"
-                        android:gravity="center"/>
-                </LinearLayout>
-
-                <EditText
-                    android:id="@+id/et_commit_qq"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:background="@drawable/bg_edit"
-                    android:textColorHint="#c6c3c3"
-                    android:layout_marginBottom="2dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="#FFFFFF"
-                android:layout_marginTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/application_condition_icon"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="微信"
-                        android:textSize="15sp"
-                        android:textColor="#05BDA7"
-                        android:gravity="center"/>
-                </LinearLayout>
-
-                <EditText
-                    android:id="@+id/et_commit_weixin"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:background="@drawable/bg_edit"
-                    android:textColorHint="#c6c3c3"
-                    android:layout_marginBottom="2dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="#FFFFFF"
-                android:layout_marginTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/application_condition_icon"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="身份证号"
-                        android:textSize="15sp"
-                        android:textColor="#05BDA7"
-                        android:gravity="center"/>
-                </LinearLayout>
-
-                <EditText
-                    android:id="@+id/et_commit_certif"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:background="@drawable/bg_edit"
-                    android:textColorHint="#c6c3c3"
-                    android:layout_marginBottom="2dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="#FFFFFF"
-                android:layout_marginTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/application_condition_icon"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="居住省市"
-                        android:textColor="#05BDA7"
-                        android:textSize="15sp"
-                        android:gravity="center"/>
-                </LinearLayout>
-
-                <EditText
-                    android:id="@+id/et_commit_province"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:background="@drawable/bg_edit"
-                    android:textColorHint="#c6c3c3"
-                    android:layout_marginBottom="2dp" />
-            </LinearLayout>
-
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="提交"
+                android:text="下一步"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:onClick="commitInfo"
+                android:onClick="netStep"
                 android:padding="5dp"
                 android:textSize="20sp"
                 android:textColor="@color/white"
-                android:gravity="center"
                 android:background="@drawable/bg_button"/>
         </LinearLayout>
     </ScrollView>
