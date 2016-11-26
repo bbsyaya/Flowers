@@ -250,10 +250,10 @@
                     android:layout_height="80dp"
                     android:background="@drawable/bg_circle"
                     android:layout_centerHorizontal="true"/>
-                <ImageView
+                <zhiyuan.com.flowers.view.CircleImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/class_icon"
+                    android:src="@drawable/flowers_logo"
                     android:layout_marginTop="5dp"
                     android:layout_centerHorizontal="true"/>
 
